@@ -1,0 +1,342 @@
+body {
+  margin: 0;
+
+  color: white;
+}
+
+.container {
+  max-width: 1547px;
+  /*ეს არის კონტენტის ზომა*/
+  width: 90%;
+  /*ავტომატურად ზომავს კონტენტის ზომას*/
+  margin-inline: auto;
+}
+
+
+.welcome {
+
+  background: #6fb3ae;
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+
+
+    .button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+
+    }
+
+
+
+
+  }
+
+  .logo {
+    color: white;
+    overflow: hidden;
+    transform: translateX(-280px);
+  }
+
+  .nav-links {
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+
+    }
+
+  }
+
+
+}
+
+
+
+.image {
+  background-color: #6fb3ae;
+
+
+  .main-image {
+    position: absolute;
+    top: 224px;
+    right: 228px;
+    background-color: #6fb3ae;
+    margin-bottom: 100px;
+
+
+  }
+
+  .chart-icon {
+    position: absolute;
+    top: 354px;
+    right: 218px;
+  }
+
+  .mail {
+    position: absolute;
+    top: 604px;
+    right: 118px;
+  }
+}
+
+
+
+
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  background-color: #6fb3ae;
+
+
+  .text {
+    max-width: 400px;
+    margin-top: 222px;
+
+
+    h1 {
+
+      font-size: 36px;
+    }
+
+  }
+
+
+
+  .join {
+    margin-top: 20px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+    background: #FFFFFF4D;
+    color: white;
+
+  }
+
+
+
+}
+
+
+
+.wrapper {
+  display: flex;
+  align-items: center;
+
+}
+
+
+.orange {
+  color: orange;
+}
+
+
+
+.number {
+  font-size: 20px;
+  font-weight: bold;
+  color: #545567;
+}
+
+.calendar {
+
+  background: #FFFFFFCC;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: #545567;
+  backdrop-filter: blur(2px);
+
+  position: absolute;
+  top: 409px;
+  right: 717px;
+
+
+
+
+
+
+  .label {
+    font-size: 15px;
+
+  }
+
+}
+
+.mail {
+
+
+  background: #FFFFFFCC;
+  border-radius: 20px;
+  padding: 20px 30px;
+  color: #545567;
+  backdrop-filter: blur(2px);
+  z-index: 2;
+
+
+
+
+  .icon {
+    background: #F88C3D;
+    border: 1px solid #F88C3D;
+    border-radius: 10px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+
+
+
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+
+  }
+
+  .subtitle {
+    font-size: 15px;
+
+  }
+
+}
+
+.ux {
+  background: #FFFFFFCC;
+  border-radius: 20px;
+  padding: 20px 30px;
+  color: #545567;
+  position: absolute;
+  top: 744px;
+  right: 639px;
+  backdrop-filter: blur(2px);
+  z-index: 2px;
+
+
+  .join-button {
+
+    border: 1px solid #D8587E;
+    border-radius: 20px;
+    background-color: #D8587E;
+    color: #FFFFFF;
+    padding: 10px 15px;
+  }
+}
+
+
+section.achievements {
+  margin-top: 400px;
+  color: black;
+
+
+
+  .stats {
+    margin-top: 70px;
+
+    ul {
+      list-style: none;
+      padding: 30px;
+
+      li {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .label {
+      font-size: 20px;
+    }
+
+
+
+  }
+}
+
+.features {
+  margin-top: 80px;
+
+
+  .cloud {
+    margin-bottom: 100px;
+
+    p {
+      color: #545567;
+    }
+
+  }
+
+  .feature-card {
+
+    ul {
+
+      list-style: none;
+
+    }
+  }
+
+  .icon {
+
+    position: absolute;
+    top: 0;
+    /* ცენტრი ზუსტად ბორდერის ხაზზე დგება */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* აწევს ზემოთ ნახევარი სიმაღლით და აცენტრებს */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+}
+
+.content {
+  margin-top: 100px;
+  margin-bottom: 50px;
+
+ 
+
+  .text {
+    position: absolute;
+    top: 3117px;
+    left: 464px;
+    z-index: 3;
+  }
+
+  .button{
+    border-radius: 1px solid white;
+    
+  }
+
+}
+
+
+
+
+
+
+.border {
+  border: 1px solid white;
+  background: white;
+  border-radius: 50px;
+  padding: 40px 50px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(2px);
+  z-index: 2;
+  width: 300px;
+  display: flex;
+  align-items: center;
+
+
+}

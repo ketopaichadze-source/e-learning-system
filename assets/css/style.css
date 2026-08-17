@@ -1,6 +1,5 @@
 body {
   margin: 0;
-
   color: white;
 }
 
@@ -305,24 +304,43 @@ section.achievements {
   margin-top: 100px;
   margin-bottom: 50px;
 
- 
-
-  .text {
-    position: absolute;
-    top: 3117px;
-    left: 464px;
-    z-index: 3;
-  }
-
-  .button{
-    border-radius: 1px solid white;
-    
-  }
 
 }
 
 
+.img-left {
+  position: relative;
 
+
+  .text {
+    position: absolute;
+    top: 100px;
+    left: 90px;
+    font-size: 25px;
+
+
+  }
+
+  .btn {
+    position: absolute;
+    left: 129px;
+    bottom: 70px;
+    border: 1px solid #FFFFFF;
+    padding: 20px;
+    border-radius: 30px;
+    background: transparent;
+    color: #FFFFFF;
+  }
+  
+
+  .img-student{
+    position: absolute;
+    top: 100px;
+    right: 90px;
+    
+  }
+
+}
 
 
 
@@ -340,3 +358,32 @@ section.achievements {
 
 
 }
+
+
+section.classroom{
+
+  margin-top: 150px;
+  p{
+    color: #545567;
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+
+  
+
+}
+
+
+.img-classroom{
+    position: relative;
+
+    .img-elips{
+      position: absolute;
+      left: 100px;
+      top: 50px;
+
+    }
+
+  }
+
+

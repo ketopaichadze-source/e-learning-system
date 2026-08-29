@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  color: white;
+
 }
 
 .container {
@@ -35,10 +35,18 @@ body {
 
   }
 
-  .logo {
+  .logo-links {
     color: white;
-    overflow: hidden;
-    transform: translateX(-280px);
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    background-image: url(/assets/images/polygon.svg);
+    background-size: contain;
+    /*ჩანს სრულად, მთლიანად cover ჭრის ფოტოს */
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+
   }
 
   .nav-links {
@@ -59,6 +67,8 @@ body {
 
 
 }
+
+
 
 
 
@@ -133,6 +143,11 @@ body {
 .wrapper {
   display: flex;
   align-items: center;
+
+  a {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
 
 }
 
@@ -259,7 +274,16 @@ section.achievements {
       font-size: 20px;
     }
 
+  }
 
+  .succsess {
+
+    max-width: 650px;
+    /*სიგანე შევუზღუდე*/
+    margin-inline: auto;
+    /* ვრაპერი იცენტრება*/
+    text-align: center;
+    /*შიგნით რაც არის ის იცენტრება*/
 
   }
 }
@@ -308,37 +332,68 @@ section.achievements {
 }
 
 
+.left {
+  position: relative;
+
+  .text-student {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+
+    span {
+      margin-bottom: 1rem;
+      display: block;
+      text-align: center;
+    }
+
+    button {
+
+      text-align: center;
+    }
+
+
+  }
+
+
+}
+
+.right {
+  width: 400px;
+  background-size: contain;
+
+  background-image: url(../images/students.png);
+  background-repeat: no-repeat;
+
+}
+
+
+
+
+
 .img-left {
   position: relative;
 
 
   .text {
-    position: absolute;
-    top: 100px;
-    left: 90px;
+
+
     font-size: 25px;
 
 
   }
 
   .btn {
-    position: absolute;
-    left: 129px;
-    bottom: 70px;
+
+
     border: 1px solid #FFFFFF;
     padding: 20px;
     border-radius: 30px;
-    background: transparent;
     color: #FFFFFF;
-  }
-  
 
-  .img-student{
-    position: absolute;
-    top: 100px;
-    right: 90px;
-    
   }
+
 
 }
 
@@ -360,60 +415,61 @@ section.achievements {
 }
 
 
-section.classroom{
+section.classroom {
 
   margin-top: 150px;
-  p{
+
+  p {
     color: #545567;
     margin-top: 50px;
     margin-bottom: 25px;
   }
 
-  
-
-}
-
-
-.img-classroom{
-  
-    position: relative;
-
-    
-    img{
-      position: relative;
-      z-index: 2;
-
-    }
-
-    .img-rect{
-      position: absolute;
-      left: -10px;
-      top: -10px;
-      z-index: 1 ;
-
-    }
-
-    .img-green-rect{
-
-      position: absolute;
-      right: -10px;
-      bottom: -10px;
-      z-index: 1;
-    }
-
 
 
 }
 
-.learn-more{
+
+.img-classroom {
+
   position: relative;
 
-  .about{
+
+  img {
+    position: relative;
+    z-index: 2;
+
+  }
+
+  .img-rect {
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    z-index: 1;
+
+  }
+
+  .img-green-rect {
+
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+    z-index: 1;
+  }
+
+
+
+}
+
+.learn-more {
+  position: relative;
+
+  .about {
     position: relative;
     z-index: 2;
   }
 
-  .img-circle-big{
+  .img-circle-big {
     position: absolute;
     top: -10px;
     left: -10px;
@@ -421,15 +477,489 @@ section.classroom{
 
   }
 
-  .img-circle-small{
+  .img-circle-small {
     position: absolute;
     top: 120px;
     right: 10px;
-    
+
 
   }
 }
 
 
 
+.online-classroom {
+  margin-top: 176px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
 
+
+
+  .users {
+    position: relative;
+    width: 710px;
+
+    .blur-bg {
+      position: relative;
+      z-index: 2;
+    }
+
+    .green,
+    .purple,
+    .blue,
+    .red {
+      position: absolute;
+      z-index: 1;
+    }
+
+    .green {
+      top: -70px;
+      left: 10px;
+    }
+
+    .purple {
+      bottom: -60px;
+      left: 450px;
+    }
+
+    .blue {
+      top: -70px;
+      left: 150px;
+    }
+
+    .red {
+      left: 400px;
+      bottom: -60px;
+    }
+
+    .instructor,
+    .tamara-c,
+    .adam,
+    .humbert,
+    .patricia {
+      position: absolute;
+      z-index: 3;
+    }
+
+    .instructor {
+      left: 10px;
+      top: 70px;
+    }
+
+    .tamara-c {
+      top: 70px;
+      left: 350px;
+    }
+
+    .adam {
+      top: 10px;
+      left: 500px;
+    }
+
+    .humbert {
+      bottom: 30px;
+      left: 350px;
+    }
+
+    .patricia {
+      bottom: -60px;
+      left: 500px;
+    }
+
+    .present,
+    .call,
+    .button {
+      position: absolute;
+      z-index: 4;
+    }
+
+    .present {
+      left: 10px;
+      bottom: 5px;
+    }
+
+    .call {
+      bottom: 5px;
+      left: 170px;
+    }
+
+    .button {
+      left: 250px;
+      bottom: 70px;
+    }
+
+
+
+
+  }
+
+  .user-interface {
+    max-width: 350px;
+
+    h3 {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+
+.feature-block {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  /* სტანდარტული სიგანე */
+  gap: 80px;
+
+  h3 {
+    margin-bottom: 40px;
+  }
+
+  &.feature-block--wide {
+    max-width: 1100px;
+    margin-top: 50px;
+  }
+}
+
+
+.See-more-features {
+  margin-top: 100px;
+
+  .btn {
+
+    display: inline-block;
+    border: 1px solid #49BBBD;
+    border-radius: 50px;
+    background: transparent;
+    padding: 16px 36px;
+    color: #49BBBD;
+    text-decoration: none;
+    transition: all 0.3 s;
+  }
+
+  .btn:hover {
+    background-color: #49BBBD;
+    color: #ffffff;
+  }
+
+}
+
+.explore-courses {
+  margin-top: 70px;
+
+
+
+
+  .course-shelf {
+    position: relative;
+
+    .shelf-bg {
+
+      background-color: #9DCCFF;
+      position: absolute;
+      width: 88%;
+      height: 110%;
+      opacity: 0.2;
+      z-index: -1;
+      left: -5%;
+      top: -5%;
+      border-bottom-right-radius: 20px;
+
+    }
+
+    .wrapper {
+
+      list-style: none;
+      position: relative;
+      display: flex;
+      gap: 20px;
+      align-items: flex-end;
+      padding-bottom: 40px;
+      height: 65px;
+      background-color: #0000003e;
+
+
+
+
+      li.course {
+        padding: 8px 10px;
+        /* width: 80px; */
+        border: 1px solid white;
+        border-radius: 15px;
+        /* width: 70px; */
+        transform: skewX(15deg);
+        position: relative;
+
+
+
+
+
+        .title {
+          border: 1px solid #e2f0d9;
+          border-radius: 10px;
+          font-size: 20px;
+          color: white;
+          width: 55px;
+          writing-mode: vertical-rl;
+          /* ტექსტის ამოსატრიალებლად */
+          transform: rotate(180deg);
+          white-space: nowrap;
+          width: 100%;
+          height: 100%;
+
+
+        }
+
+
+        .pill-card {
+          width: 50px;
+          height: 220px;
+          background: #e2f0d9;
+          border-radius: 20px;
+          padding: 10px;
+          z-index: 1;
+          position: relative;
+          transition-duration: 1s;
+
+          &:hover {
+            width: 410px;
+            opacity: 0;
+
+            &+.expanded {
+              opacity: 1;
+
+            }
+          }
+        }
+
+        .expanded {
+          position: absolute;
+          top: 0;
+          left: 0;
+          /* right: 0;
+          bottom: 0; */
+          z-index: -1;
+          opacity: 0;
+          border: 2px solid #49BBBD;
+          border-radius: 20px;
+          width: 470px;
+          height: 225px;
+          &>div{
+            &>img{
+              align-self: center;
+            }
+          }
+
+
+
+
+          .explore {
+            border: 2px solid #49BBBD;
+            background-color: transparent;
+            color: #49BBBD;
+            border-radius: 15px;
+            /* width: 100px; */
+            padding: 8px 5px;
+  
+
+          }
+
+
+        }
+      }
+    }
+  }
+}
+
+
+
+.pic-lorem {
+
+  border: 1px solid #6DB4A7;
+  background-color: white;
+  width: 350px;
+}
+
+
+
+.testimonials {
+
+
+
+  .assesment {
+    border: 1px solid #49BBBD;
+    border-radius: 30px;
+    background: transparent;
+    width: 300px;
+    height: 50px;
+    padding: 20px;
+
+
+
+
+  }
+
+  .arrow-icon {
+    transform: scale(0.5);
+    /* 50%-ით დაპატარავება */
+  }
+
+  .img-st {
+    position: relative;
+    z-index: 0;
+  }
+
+  .review {
+    position: absolute;
+    z-index: 1;
+  }
+
+
+
+}
+
+
+
+.review-card {
+
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 400px;
+  height: 200 px;
+  display: flex;
+  align-items: start;
+  padding: 24px 28px;
+  border-left-color: #F67766;
+  border-left-width: 10px;
+  font-size: 15px;
+  background-color: #ffffff;
+  position: relative;
+  top: -80px;
+  left: 100px;
+  z-index: 2;
+
+
+
+
+}
+
+.student-name {
+  font-weight: 700;
+  font-size: 15px;
+  color: #1c2b3a;
+}
+
+
+
+
+.meet {
+  .news {
+    border: 1px solid #49BBBD;
+    background-color: #49BBBD;
+    color: white;
+    border-radius: 20px;
+    width: 60px;
+    padding: 6px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s;
+
+  }
+
+  .news:hover {
+    background-color: white;
+    color: #49BBBD;
+  }
+
+}
+
+.zoom-classes {
+
+
+  position: relative;
+
+
+  .btn {
+    border: 1px solid #49BBBD;
+    background-color: #49BBBD;
+    border-radius: 20px;
+    width: fit-content;
+    color: white;
+    position: absolute;
+    padding: 5px 7px;
+    bottom: 20px;
+    right: 76%;
+    transition: all 0.3s;
+  }
+
+  .btn:hover {
+    background-color: white;
+    color: #49BBBD;
+
+
+  }
+
+}
+
+
+.footer {
+
+
+  .brand {
+    width: 270px;
+    margin: auto;
+
+    p {
+      font-size: 20px;
+      border-left: 1px solid #626381;
+      color: #FFFFFF;
+      padding-left: 20px;
+
+
+    }
+
+  }
+
+  .newsletter {
+    .email {
+      padding: 10px;
+      border: 1px solid #83839A;
+      border-radius: 20px;
+      color: #83839A;
+      background-color: transparent;
+      width: 300px;
+
+
+    }
+
+    .subscribe {
+      padding: 10px;
+      background-color: #49BBBD;
+      color: white;
+      border-radius: 20px;
+      border: 1px solid #49BBBD;
+      font-size: medium;
+
+    }
+  }
+
+  ul {
+    list-style: none;
+    li{
+      a{
+        color: #83839A;
+        
+      }
+      
+    }
+   
+
+  }
+  p{
+    color: #83839A;
+  }
+
+}

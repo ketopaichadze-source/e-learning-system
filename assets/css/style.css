@@ -11,7 +11,6 @@ body {
   margin-inline: auto;
 }
 
-
 .welcome {
 
   background: #6fb3ae;
@@ -28,8 +27,22 @@ body {
       border: none;
       border-radius: 20px;
 
+
     }
 
+    a.button.signin {
+      background-color: white;
+      color: black;
+
+
+    }
+
+    a.button.signup {
+
+      background-color: rgba(255, 255, 255, 0.3);
+      color: white;
+
+    }
 
 
 
@@ -42,7 +55,6 @@ body {
     text-decoration: none;
     background-image: url(/assets/images/polygon.svg);
     background-size: contain;
-    /*ჩანს სრულად, მთლიანად cover ჭრის ფოტოს */
     background-repeat: no-repeat;
     width: 80px;
     height: 80px;
@@ -1037,6 +1049,7 @@ section.login {
     justify-content: center;
     align-items: center;
 
+
   }
 
 }
@@ -1236,9 +1249,9 @@ section.related {
 
 }
 
-section.marketing-articles {
+/* section.marketing-articles {
 
-  /* .girl{
+   .girl{
     background-image: url(../images/girl-whit-ipad.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1247,10 +1260,10 @@ section.marketing-articles {
     border: 20px;
     
 
-  } */
+  } 
 
 
-}
+} */
 
 .card {
   border: 1px solid white;
@@ -1440,13 +1453,680 @@ section.become-teacher {
   }
 
   .first {
-    
-      border: 1px solid white;
-      background: white;
-      border-radius: 20px;
-      padding: 10px 20px;
-      width: 400px;
+
+    border: 1px solid white;
+    background: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    width: 400px;
+
+
+  }
+}
+
+section.history {
+  background-color: #9dccff34;
+
+  .card-wrapper {
+    border: 1px solid white;
+    background-color: white;
+    padding: 20px;
+    width: 350px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .progress-bar {
+    width: 100%;
+    height: 8px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #49bbbd 70%, #e0e0e0 70%);
+  }
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #49bbbd 70%, #e0e0e0 70%);
+}
+
+section.category {
+  .category-card {
+    border: 1px solid white;
+    padding: 30px;
+    gap: 15px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    border-radius: 20px;
+  }
+
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+}
+
+section.recommend {
+  background-color: #9dccff5a;
+
+
+}
+
+section.class-plan {
+  .btn-overview {
+    border: transparent;
+    width: 100px;
+    border-radius: 10px;
+    padding: 8px;
+  }
+
+  .rate {
+    background-color: #9DCCFF4D;
+    border-radius: 20px;
+    width: 700px;
+    padding: 40px;
+
+    .stars {
+
+      .rate-box {
+
+        border: 1px solid white;
+        background-color: white;
+        border-radius: 10px;
+        padding: 30px;
+
+        ul {
+          list-style: none;
+
+        }
+      }
+
+      .progress {
+        width: 100%;
+
+        ul {
+          list-style: none;
+
+          li {
+            color: #00000080
+          }
+        }
+      }
+
 
 
     }
   }
+
+  .border-b {
+    border-bottom: 1px solid gray;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+  }
+
+  .pricing-box {
+    position: absolute;
+    top: 310px;
+    right: 100px;
+    width: 300px;
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+
+    .buy-now {
+      background-color: #49BBBD;
+      border: 1px solid #49BBBD;
+      color: white;
+      font-size: large;
+      padding: 10px 40px;
+      border-radius: 15px;
+      width: 250px;
+    }
+
+    .course-includes {
+
+
+      ul {
+        list-style: none;
+        border-top: 1px solid black;
+        padding-top: 20px;
+      }
+
+    }
+
+  }
+
+  .old-price {
+    text-decoration: line-through;
+    color: gray;
+  }
+
+  .training {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .course-share {
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+
+    }
+  }
+}
+
+section.online-class {
+
+  .img-circle-big {
+    position: absolute;
+    left: 220px;
+
+  }
+
+  .img-circle-small {
+    position: absolute;
+    left: 600px;
+    bottom: -1300px;
+
+  }
+}
+
+section.educational-offers {
+
+  .instructor-offer {
+    background-image: url(../images/instructors.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    padding: 60px 40px;
+
+  }
+
+  .red-square {
+    border: 1px solid #FF000099;
+    background-color: #FF000099;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    color: white;
+    font-size: medium;
+  }
+}
+
+section.payment {
+  ul {
+    list-style: none;
+  }
+
+  .payment-box {
+    border: 1px solid #FFFFFF;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    width: 400px;
+  }
+
+
+  .card-type img {
+    max-width: 200px;
+    height: 40px;
+  }
+
+  .card-types {
+    input[type="radio"] {
+      appearance: none;
+      -webkit-appearance: none;
+
+    }
+
+  }
+
+  .confirm-btn {
+    margin-top: 40px;
+    border: 1px solid #49BBBD;
+    color: white;
+    background-color: #49BBBD;
+    width: 100%;
+    border-radius: 15px;
+    padding: 10px;
+  }
+
+  .form-group {
+    border: 1px solid #D9D9D9;
+
+  }
+
+  .checkoutform {
+    border: 1px solid white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .payment-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .summary-card {
+    background-color: #9dccff63;
+    width: auto;
+    border-radius: 20px;
+
+  }
+
+  .cart-item {
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid #d0d7de;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+
+
+}
+
+section.education-offers {
+
+  .green-square {
+    border: 1px solid #49BBBD;
+    background-color: #49BBBD;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    color: white;
+    font-size: medium;
+  }
+
+  .offer_first {
+    background-image: url(../images/meeting.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    padding: 40px 40px;
+
+  }
+
+  .offer_second {
+    background-image: url(../images/girl-whit-ipad.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    padding: 40px 40px;
+
+  }
+
+  .offer_third {
+
+    background-image: url(../images/cat.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    padding: 40px 40px;
+  }
+
+
+}
+
+section.swift {
+  ul {
+    list-style: none;
+
+    .button {
+      border: 1px solid #49BBBD1A;
+      background-color: #49BBBD1A;
+      color: #696984;
+      padding: 10px;
+      border-radius: 20px;
+    }
+  }
+
+  .line {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0.5px solid #696984
+  }
+
+  .follow-button {
+    border: 1px solid #49BBBD;
+    background-color: white;
+    color: #49BBBD;
+    padding: 10px 70px;
+    border-radius: 10px;
+
+  }
+}
+
+section.course-calendar {
+  .arrow {
+    border: 1px solid #49BBBD;
+    background-color: #49BBBD;
+    padding: 4px 2px;
+
+  }
+
+}
+
+section.lessons {
+
+
+  .event-wrapper {
+    background-color: #e3f2fd;
+    /* ღია ცისფერი ფონი */
+    padding: 30px;
+    width: 100%;
+
+  }
+
+  .about-course {
+    background-color: #49BBBD;
+    color: white;
+    height: 100px;
+    width: 100%;
+  }
+
+  .event-form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 700px;
+    max-width: 650px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333333;
+    font-size: 14px;
+  }
+
+  .form-group textarea,
+  input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #fff;
+    transition: border-color 0.2s;
+  }
+
+  .form-row {
+    display: flex;
+    gap: 20px;
+  }
+
+  .form-actions {
+    text-align: right;
+  }
+
+  .form-actions button {
+    background: #4db6ac;
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s;
+
+  }
+}
+
+section.lessons {
+  .module-list {
+    .module-item {
+      cursor: pointer;
+      padding: 10px;
+      margin: 5px;
+      border-radius: 4px;
+      width: 321px;
+      transition-duration: 0.3s;
+
+
+      .lessons-wrapper {
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition-duration: 0.3s;
+
+        .lesson {
+          padding: 6px 10px;
+          margin: 4px;
+          border-radius: 3px;
+
+
+        }
+
+      }
+
+      &.expanded {
+        .lessons-wrapper {
+          height: auto;
+          visibility: visible;
+          opacity: 1;
+
+        }
+
+      }
+
+      &:hover {
+        color: white;
+
+      }
+    }
+  }
+
+
+}
+
+
+
+section.conference-meeting {
+  margin-top: 30px;
+
+
+  .arrow {
+    border: 1px solid #49BBBD;
+    background-color: #49BBBD;
+    padding: 4px 2px;
+
+  }
+
+  .conference-boxs {
+    padding: 20px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 20px;
+    width: 935px;
+  }
+
+  .meet-border {
+    border: 3px solid white;
+    border-radius: 20px;
+  }
+
+  .meet {
+    margin-top: 30px;
+    background-image: url(../images/teacher.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 1000px;
+    width: 900px;
+
+  }
+
+  .conference-b-boxs {
+    padding: 20px;
+    border: 1px solid #E6F2FF40;
+    background-color: #E6F2FF;
+    border-radius: 20px;
+    width: 700px;
+    margin-top: 100px;
+  }
+
+  .white-box {
+    border: 1px solid white;
+    border-radius: 18px;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    padding: 5px 10px;
+  }
+}
+
+section.course-content {
+  margin-top: 30px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  height: auto;
+  
+
+
+  .progress{
+    border: 1px solid #49BBBD;
+    width: 63px;
+    height: 5px;
+    background-color:  #49BBBD;
+    opacity: 0.25;
+  }
+  .progress-act{
+    background-color: #49BBBD;
+    border: 1px solid #49BBBD;
+    width: 63px;
+    height: 5px;
+  }
+
+  .courses-list {
+    width: 100%;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    display: block;
+
+  }
+
+  .course-item {
+    background-color: #ffffff;
+    padding: 14px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    border: 1px solid white;
+    list-style: none;
+  }
+
+  .course-title {
+    font-weight: bold;
+    color: #252641;
+    font-size: 16px;
+    /* width: 300px; */
+  }
+
+
+  .topics-list {
+    display: none;
+    margin-top: 10px;
+    padding-left: 20px;
+    color: #252641;
+    font-size: 14px;
+  }
+
+  .course-item.active .course-title {
+    color: #49BBBD;
+  }
+
+  .course-item.active .topics-list {
+    display: block;
+
+
+  }
+
+  .course-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #252641;
+}
+
+  .course-info span {
+    display: flex;
+    align-items: center;
+    gap: 6px; 
+}
+}
+
+section.book{
+    border: 1px solid white;
+    background-color: white;
+    width: auto;
+    border-radius: 10px;
+    padding: 20px;
+
+
+  .benefit-box{
+    border: 1px solid white;
+    box-shadow:0 10px 20px rgba(0, 0, 0, 0.15);
+    width: auto;
+    padding: 10px;
+    border-radius: 20px;
+
+  }
+}
+
+section.search-bar{
+  .content-background{
+    background-image: url('../images/classrom.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    height: 200px;
+    opacity: 0.6;
+
+  }
+  .search-bar{
+    border: 1px solid white;
+    background-color: white;
+    width: 100px;
+  }
+     
+}

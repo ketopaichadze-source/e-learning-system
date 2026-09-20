@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/fonts.css">
-    <link rel="stylesheet" href="assets/css/utils.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <link rel="stylesheet" href="../assets/css/utils.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <section class="login flex justify-between justify-center gap-95 margin-t-50">
-        <div class="login-pic c-white flex direction-column justify-end padding-t gap-10">
+    <main>
+    <section class="register flex justify-between justify-center gap-95 margin-t-50">
+        <div class="register-pic c-white flex direction-column justify-end padding-t gap-10">
 
             <h1>Lorem Ipsum is simply</h1>
             <p>Lorem Ipsum is simply</p>
@@ -27,25 +27,25 @@
                 <a class="register" href="#">Register</a>
             </div>
 
-            <form class="container">
+            <form id="registerForm" class="container">
                 <p class="description margin-b-24">Lorem Ipsum is simply dummy text of the printing and typesetting
                     industry.</p>
-
+                
                 <div class="input-group flex direction-column gap-10">
                     <label for="email">Email Adress</label>
-                    <input type="email" placeholder="Enter your Email Address">
+                    <input required id="email" type="email" placeholder="Enter your Email Address">
                 </div>
 
                 <div class="input-group flex direction-column margin-t-20 gap-10">
                     <label for="username">Username</label>
-                    <input type="username" placeholder="Enter your User name">
+                    <input required id="user" minlength="5" maxlength="10" type="text" placeholder="Enter your User name">
                 </div>
 
                 <div class="input-group flex direction-column margin-t-20 gap-10">
-                    <label for="password">Password</label>
-                    <div class=" rapper">
-                        <input type="password" placeholder="Enter your Password">
-                        <button type="button" class="hide-password">
+                    <label  for="password">Password</label>
+                    <div class=" wrapper">
+                        <input required type="password" minlength="8" maxlength="15" id="password" placeholder="Enter your Password">
+                        <button type="button"  class="hide-password">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16"
                                 fill="none">
                                 <path
@@ -64,14 +64,15 @@
 
                 <div class="remember flex justify-between margin-t-20">
                     <div class="flex gap-5 ">
-                        <a href="#"><img src="assets/images/login-rect.svg" alt="Checkbox"></a>
+                        <a href="#"><img src="../assets/images/login-rect.svg" alt="Checkbox"></a>
                         <span class="gray">Rememebr me</span>
                     </div>
                     <span class="gray">Forgot Password ?</span>
                 </div>
 
                 <div class="flex direction-column align-end margin-t-20">
-                    <a class="lgn-btn" href="#">Login</a>
+                   
+                    <button class="lgn-btn"> Registration</button>
                     
                 </div>
             </form>
@@ -82,6 +83,8 @@
         </div>
 
     </section>
+    </main>
+    <script type="module" src="../assets/js/app.js"></script>
 </body>
 
 </html>

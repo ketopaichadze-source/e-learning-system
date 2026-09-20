@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <link rel="stylesheet" href="../assets/css/utils.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <section class="lessons flex">
+            <aside>
+                <h2>module list</h2>
+                <ul class="module-list">
+
+                </ul>
+            </aside>
+            <div class="about-course ">
+                <h2 class="padding-10">Learn about Adobe XD & Prototyping</h2>
+                <div class="flex justify-between padding-10">
+                    <span>Introduction about XD</span>
+                    <span>1 hour</span>
+                </div>
+                <div class="event-wrapper">
+                    <div class="flex direction-column margin-t-50 gap-15">
+                        <h3 class="gray">Create new event</h3>
+                        <p class="gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmodadipiscing
+                            elit, sed do
+                            eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing
+                            elit,
+                            sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmodadipiscing
+                            elit, sed do eiusmodeiusmodadipiscing elit, sed do eiusmodLorem</p>
+
+                    </div>
+                    <form id="eventForm" class="event-form margin-t-20">
+                        <title>Event Name</title>
+                        <div class="form-group">
+                            <label for="event">Event Name</label>
+                            <input  type="text" id="event"
+                                placeholder="Adobe XD Auto - Animate : Your Guide to Creating">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="startdate">Start date / Time</label>
+                                <input id="startdate" type="date" value="September 24, 2017 07:59 am">
+                            </div>
+                            <div class="form-group">
+                                <label for="enddate">End Date / Time</label>
+                                <input id="enddate" type="text" value="September 24, 2017 07:59 am">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <input id="location" type="text" placeholder="2118 Thornridge Cir, Syracuse, Connecticut 35624">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="notification">Notification</label>
+                                <select id="notification">
+                                    <option>30 mins</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input id="email" type="email" id="email" placeholder="jessica.hansome@example.com">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description">Event Description</label>
+                            <textarea id="description"
+                                rows="4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...</textarea>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit">Save Now</button>
+                        </div>
+                    </form>
+                     
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="../assets/js/app.js" ></script>
+     <script type="module" src="../assets/js/event.js" ></script>
+
+
+</body>
+
+
+</html>

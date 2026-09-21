@@ -106,7 +106,9 @@ else if(window.location.pathname.includes("calendar")){
 else if(window.location.pathname.includes("search")){
     console.log("search")
     const filterswrapper = document.querySelector(".filters-btn")
-    genetarateFilter(["1","2","3","sdkjadkj"],filterswrapper)
+     const allSubjects = searchCourses.map(course => course.subject);
+     const uniqueSubjects = [...new Set(allSubjects)];
+    genetarateFilter(uniqueSubjects,filterswrapper)
 
 }
 

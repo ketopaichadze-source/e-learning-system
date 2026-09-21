@@ -1,6 +1,9 @@
 
 import { modulesData,searchCourses } from "./data.js"
 import {genetarateFilter} from "./function.js"
+import { renderCourses} from "./function.js"
+import {renderLearningSection} from "./function.js"
+
 
 console.log(modulesData)
 console.log(window.location)
@@ -87,7 +90,7 @@ else if(window.location.pathname.includes("calendar")){
         li.addEventListener("click",(e)=>{
             if (e.target ===li){
                 li.classList.toggle("expanded")
-                // ol.style.display = ol.style.display ==="none"? "block":"none";
+                
 
                 console.log("Item click")
             }
@@ -106,11 +109,28 @@ else if(window.location.pathname.includes("calendar")){
 else if(window.location.pathname.includes("search")){
     console.log("search")
     const filterswrapper = document.querySelector(".filters-btn")
-    genetarateFilter(["1","2","3","sdkjadkj"],filterswrapper)
+    const allSubjects = searchCourses.map(course => course.subject)
+
+
+    const uniqueSubjects = [...new Set(allSubjects)]
+    genetarateFilter(uniqueSubjects,filterswrapper)
+    
+    const coursesWrapper = document.querySelector(".courses-container");
+    if (coursesWrapper) {
+        renderCourses(searchCourses, coursesWrapper);
+    }
+    
+    
 
 }
 
 
+
+
+const learningWrapper = document.querySelector(".learning-section-wrapper");
+if (learningWrapper) {
+    renderLearningSection(learningWrapper);
+}
 
 
 

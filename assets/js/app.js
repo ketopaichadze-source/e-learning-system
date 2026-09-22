@@ -1,8 +1,9 @@
 
 import { modulesData,searchCourses } from "./data.js"
-import {genetarateFilter} from "./function.js"
-import { renderCourses} from "./function.js"
-import {renderLearningSection} from "./function.js"
+import {genetarateFilter,renderCourses,renderLearningSection,create} from "./function.js"
+
+
+
 
 
 console.log(modulesData)
@@ -110,28 +111,35 @@ else if(window.location.pathname.includes("search")){
     console.log("search")
     const filterswrapper = document.querySelector(".filters-btn")
     const allSubjects = searchCourses.map(course => course.subject)
+    const allLnguage = searchCourses.map(course=> course.language)
 
 
     const uniqueSubjects = [...new Set(allSubjects)]
-    genetarateFilter(uniqueSubjects,filterswrapper)
+    genetarateFilter(uniqueSubjects,filterswrapper,"subjects")
+
+    const uniqueLanguages = [...new Set(allLnguage)]
+    genetarateFilter(uniqueLanguages,filterswrapper,"languages")
     
-    const coursesWrapper = document.querySelector(".courses-container");
+    const coursesWrapper = document.querySelector(".courses-container")
+
     if (coursesWrapper) {
-        renderCourses(searchCourses, coursesWrapper);
+        renderCourses(searchCourses, coursesWrapper)
     }
     
+
     
-
+    
+    const footer = create("footer","footer","footer") 
+    console.log(footer)
 }
 
 
 
 
-const learningWrapper = document.querySelector(".learning-section-wrapper");
+const learningWrapper = document.querySelector(".learning-section-wrapper")
 if (learningWrapper) {
-    renderLearningSection(learningWrapper);
+    renderLearningSection(learningWrapper)
 }
-
 
 
 

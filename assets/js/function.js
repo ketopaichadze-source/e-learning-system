@@ -1,9 +1,11 @@
-export function genetarateFilter(data,wrapper){
+export function genetarateFilter(data,wrapper,dropdownTitle){
+    
     const selectElement = document.createElement("select")
     const defaultOption = document.createElement("option")
     defaultOption.setAttribute("selected","")
     defaultOption.setAttribute("value","all")
-    defaultOption.textContent = "all courses"
+    defaultOption.textContent = "all "+dropdownTitle
+
     selectElement.append(defaultOption)
 
 
@@ -21,37 +23,63 @@ export function genetarateFilter(data,wrapper){
 }
 
 
+
+
+
+
+
 export function renderCourses(data, wrapper) {
     data.forEach(course => {
         const cardElement = document.createElement("div")
         cardElement.classList.add("course-card")
 
-        const titleElement = document.createElement("h3")
-        titleElement.textContent = course.title;
+
+        const titleElement = create("h3",course.title)
+
 
         const descElement = document.createElement("p")
         descElement.textContent = course.description;
 
         const infoElements = document.createElement("div")
-        infoElements.classList.add("course-info");
+        infoElements.classList.add("course-info")
      
         infoElements.textContent = `Duration ${course.duration} month | price ${course.price}`
 
-        
+        const cardFooter =document.createElement("div")
+        cardFooter.classList.add("flex","justify-between","align-center","footer")
+    
         const teacherElement = document.createElement("div")
         teacherElement.classList.add("teacher-info")
+
 
         const teacherImg = document.createElement("img")
         teacherImg.setAttribute("src", course.teacher.pic)
         teacherImg.style.width = "30px"
         teacherImg.style.borderRadius = "20px"; 
         const teacherName = document.createElement("span");
-        teacherName.textContent = ` მასწავლებელი: ${course.teacher.name}`
+        teacherName.textContent = ` Teacher: ${course.teacher.name}`
 
         teacherElement.append(teacherImg, teacherName)
+        const priceWrapper = document.createElement("div")
+        const oldPriceElement = document.createElement("span")
+        const newPriceElement = document.createElement("span")
 
-      
-        cardElement.append(titleElement, descElement, infoElements, teacherElement)
+
+        const [oldPrice,newPrice] = calculatePrices(course)
+   
+        oldPriceElement.textContent = oldPrice
+        oldPriceElement.classList.add("old")
+        newPriceElement.classList.add("new")
+
+        newPriceElement.textContent= newPrice
+        priceWrapper.classList.add("flex","price-info")
+        
+
+
+
+        priceWrapper.append(oldPriceElement,newPriceElement)
+        cardFooter.append(teacherElement,priceWrapper)
+        cardElement.append(titleElement, descElement, infoElements,cardFooter)
 
     
         wrapper.append(cardElement)
@@ -93,3 +121,35 @@ export function renderLearningSection(wrapper) {
     container.append(titleElement, elementUl, btnElement)
     wrapper.append(container)
 }
+
+
+
+export function calculatePrices(item) {
+  const oldPrice = item.price;
+  
+  // ახალი ფასი = ძველი ფასი - (ძველი ფასი * ფასდაკლება / 100)
+  const discountedPrice = oldPrice - (oldPrice * item.discount) / 100;
+  
+  return [oldPrice,discountedPrice]
+}
+
+
+
+
+
+ export function create (elementName,text,className){
+    const element = document.createElement(elementName)
+    element.textContent = text
+    element.classList.add(className)
+
+    return element
+    
+
+    
+
+    
+   
+    
+}
+
+    

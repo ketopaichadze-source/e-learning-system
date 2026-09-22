@@ -2148,7 +2148,22 @@ section.search-bar{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-   
+
+    .footer{
+      .price-info{
+        .old{
+          text-decoration: line-through;
+          font-size: 18px;
+          font-weight: 300;
+          color: #00000080;
+        }
+        .new{
+          font-size: 24px;
+          font-weight: 700;
+          color: #49BBBD;
+        }
+      }
+    }
 }
 
 

@@ -36,8 +36,8 @@ courses.forEach(course => {
         </svg>`
 
         
-        const lessonsSpan = document.createElement("span");
-        lessonsSpan.innerHTML = `${bookIcon} ${course.topics.length} Lessons`;
+        const lessonsSpan = document.createElement("span")
+        lessonsSpan.innerHTML = `${bookIcon} ${course.topics.length} Lessons`
     
 
 
@@ -60,7 +60,7 @@ courses.forEach(course => {
         courseLi.classList.toggle("active")
     })
 
-    coursesContainer.append(courseLi);
+    coursesContainer.append(courseLi)
 
 })
 

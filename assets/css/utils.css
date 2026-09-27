@@ -158,6 +158,10 @@
     
 }
 
+.font-weight-20{
+    font-weight: bold;
+}
+
 .font-15-b{
     font-size: 15px;
     font-weight: bold;
@@ -271,6 +275,13 @@
     margin-top: 20px;
     
 }
+
+.margin-t-35{
+    margin-top: 35px;
+
+}
+
+
 .margin-t-50{
     margin-top: 50px;
 }
@@ -342,6 +353,7 @@
     padding: 20px 30px;
 
 }
+
 
 
 .padding-r-50{

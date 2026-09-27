@@ -1,6 +1,6 @@
 
 import { modulesData,searchCourses } from "./data.js"
-import {genetarateFilter,renderCourses,renderLearningSection,create} from "./function.js"
+import {genetarateFilter,renderCourses,renderLearningSection,create,creatorCards} from "./function.js"
 
 
 
@@ -107,9 +107,19 @@ else if(window.location.pathname.includes("calendar")){
 }
 
 
+
+
+
+
 else if(window.location.pathname.includes("search")){
     console.log("search")
+    const coursesWrapper = document.querySelector(".courses-container")
     const filterswrapper = document.querySelector(".filters-btn")
+    
+    
+    let selectedSubject = "all";
+    let selectedLanguage = "all";
+
     const allSubjects = searchCourses.map(course => course.subject)
     const allLnguage = searchCourses.map(course=> course.language)
 
@@ -117,36 +127,77 @@ else if(window.location.pathname.includes("search")){
     const uniqueSubjects = [...new Set(allSubjects)]
     genetarateFilter(uniqueSubjects,filterswrapper,"subjects")
 
+    const subjectsFilter = document.querySelector("select.subjects")
+    subjectsFilter.addEventListener("change",(event)=>{
+        console.log(event.target.selectedOptions[0].value)
+    
+      
+        selectedSubject = event.target.selectedOptions[0].value;
+
+      
+        const filteredData = searchCourses.filter((item)=> {
+            const matchesSubject = selectedSubject === "all" || item.subject.toLowerCase().includes(selectedSubject.toLowerCase());
+            const matchesLanguage = selectedLanguage === "all" || item.language.toLowerCase().includes(selectedLanguage.toLowerCase());
+            return matchesSubject && matchesLanguage;
+        });
+
+         if (coursesWrapper) {
+            renderCourses(filteredData, coursesWrapper)
+        }
+    })
+
+
+
+
     const uniqueLanguages = [...new Set(allLnguage)]
     genetarateFilter(uniqueLanguages,filterswrapper,"languages")
     
-    const coursesWrapper = document.querySelector(".courses-container")
+    const languageFilter = document.querySelector("select.languages")
+    languageFilter.addEventListener("change",(event)=>{
+        console.log(event.target.selectedOptions[0].value)
+    
+ 
+        selectedLanguage = event.target.selectedOptions[0].value;
+
+       
+        const filteredData = searchCourses.filter((item)=> {
+            const matchesSubject = selectedSubject === "all" || item.subject.toLowerCase().includes(selectedSubject.toLowerCase());
+            const matchesLanguage = selectedLanguage === "all" || item.language.toLowerCase().includes(selectedLanguage.toLowerCase());
+            return matchesSubject && matchesLanguage
+        });
+
+         if (coursesWrapper) {
+            renderCourses(filteredData, coursesWrapper)
+        }
+    })
+
+    
 
     if (coursesWrapper) {
         renderCourses(searchCourses, coursesWrapper)
     }
     
-
+    const learningWrapper = document.querySelector(".learning-section-wrapper")
+    if (learningWrapper) {
+    renderLearningSection(learningWrapper)
+}
     
     
     const footer = create("footer","footer","footer") 
     console.log(footer)
-}
 
-
-
-
-const learningWrapper = document.querySelector(".learning-section-wrapper")
-if (learningWrapper) {
-    renderLearningSection(learningWrapper)
+    creatorCards()
 }
 
 
 
 
 
+else if(window.location.pathname.includes("literature")){
+    console.log("literature")
 
 
-
+    
+}
 
 

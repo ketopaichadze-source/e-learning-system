@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../assets/css/fonts.css">
     <link rel="stylesheet" href="../assets/css/utils.css">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Document</title>
 </head>
 
@@ -45,30 +46,30 @@
             </nav>
         </div>
     </header>
-        <main>
-    <section class="search-bar">
-        <div class="content-background">
-            <form class="search-section">
-                <div class="search-bar flex space-between">
-                    <input type="text" name="course-search" placeholder="Search your favourite course">
-                    <button type="submit" class="btn-search">Search</button>
-                </div>
+    <main>
+        <section class="search-bar">
+            <div class="content-background">
+                <form class="search-section">
+                    <div class="search-bar flex space-between">
+                        <input type="text" name="course-search" placeholder="Search your favourite course">
+                        <button type="submit" class="btn-search">Search</button>
+                    </div>
 
-                <div class="filters-btn">
-                   
-                </div>
-                
-            </form>
-    </section>
+                    <div class="filters-btn">
+
+                    </div>
+
+                </form>
+        </section>
 
         <div class="courses-container"></div>
 
 
-    <section class="bg-blue flex justify-between padding-40 align-center" width="400">
-        <div class="learning-section-wrapper"></div>
-        <img src="../assets/images/Group71.png" alt="zoom meeting">
-    </section>
-    <section class="recommend margin-t-50 padding-b-50 ">
+        <section class="bg-blue flex justify-between padding-40 align-center" width="400">
+            <div class="learning-section-wrapper"></div>
+            <img src="../assets/images/Group71.png" alt="zoom meeting">
+        </section>
+        <section class="recommend margin-t-50 padding-b-50 ">
             <div class="container ">
                 <div class="flex direction-column gap-30">
                     <div class="margin-t-50">
@@ -331,7 +332,107 @@
                         </div>
                     </div>
                 </div>
+
         </section>
+        <section class="creator-classes ">
+            <div id="cards"></div>
+        </section>
+        <section class="  students-testiominials margin-t-95 bg-light-blue ">
+            <div class="container padding-40">
+            <p class="font-20b">What our students have to say</p>
+            </div>
+            <div class=" testimonial-card flex justify-between container align-center margin-b-60">
+                <div class="pic">
+                    <img src="../assets/images/student-with-book.png" alt="student with book" width="500">
+                </div>
+                <div class="testimonials flex direction-column gap-30">
+                    <h3>Savannah Nguyen</h3>
+                    <p class="font-15-b">tanya.hill@example.com</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor
+                        Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor
+                        Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
+                    <div class="socmedia">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="students direction-column">
+                    <ul>
+                        <li><img src="../assets/images/patricia.png" alt="student" width="100"></li>
+                        <li><img src="../assets/images/humbert.png" alt="student" width="100"></li>
+                        <li><img src="../assets/images/tamara-c.png" alt="student" width="100"></li>
+                        <li><img src="../assets/images/patricia.png" alt="student" width="100"></li>
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+            <section class="education-offers container margin-t-50 margin margin-b-30">
+
+
+            <div class="flex justify-between margin-b-40">
+                <span class="font-15">Top Education offers and deals are listed here</span>
+                <span class="c-blue font-15">See all</span>
+            </div>
+            <div class="offers flex gap-50 justify-center">
+                <div class="offer_first flex direction-column gap-10 align-start">
+                    <button class="green-square"> 50%</button>
+                    <span class=" c-white">Lorem ipsum dolor</span>
+                    <p class="c-white">Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor
+                        Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
+                </div>
+                <div class="offer_second flex direction-column gap-10 align-start">
+                    <button class="green-square"> 10%</button>
+                    <span class=" c-white">Lorem ipsum dolor</span>
+                    <p class="c-white">Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor
+                        Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
+                </div>
+                <div class="offer_third flex direction-column gap-10 align-start">
+                    <button class="green-square"> 50%</button>
+                    <span class=" c-white">Lorem ipsum dolor</span>
+                    <p class="c-white">Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor
+                        Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="footer margin-t-110 bg-darkblue ">
+            <div class="brand flex justify-center align-center gap-30 padding-t-30">
+                <img src="../assets/images/logo.png" alt="logo" width="90">
+                <p>Virtual Class for Zoom</p>
+            </div>
+
+            <div class="newsletter">
+                <div>
+                    <h3 class="c-light-purple flex justify-center margin-t-95 margin-b-24 font-20">Subscribe to get our
+                        Newsletter
+                    </h3>
+                </div>
+
+                <div class=" flex justify-center align-center margin-t-20 margin-b-95 gap-10">
+                    <input class="email" type="email" placeholder="Your Email">
+                    <button class="subscribe"> Subscribe</button>
+                </div>
+
+
+                <ul class=" flex justify-center gap-15 margin-b-95">
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+
+                <p class="flex justify-center align-center padding-b-30">© 2021 Class Technologies Inc.</p>
+
+            </div>
+
+        </footer>
+
+
+
     </main>
 
 

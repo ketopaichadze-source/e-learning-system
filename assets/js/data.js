@@ -125,7 +125,7 @@ export const  searchCourses = [
     language: "en",
     teacher: {
       name: "lina",
-      pic: "https://github.com/ketopaichadze-source/e-learning-system-data/blob/main/images/teachers/lina.png?raw=true"
+      pic: "https://github.com/ketopaichadze-source/e-g-system-data/blob/main/images/teachers/lina.png?raw=true"
     }
   },
   {
@@ -219,4 +219,58 @@ export const  searchCourses = [
       pic: "https://github.com/ketopaichadze-source/e-learning-system-data/blob/main/images/teachers/lina.png?raw=true"
     }
   }
+];
+
+
+
+export const creatorsData = [
+    { name: "Jane Cooper", text: "Lorem ipsum dolor sit amet, consectetur adipising elit..." },
+    { name: "Annette Black", text: "Lorem ipsum dolor sit amet, consectetur adipising elit..." },
+    { name: "Darlene Robertson", text: "Lorem ipsum dolor sit amet, consectetur adipising elit..." },
+    { name: "Floyd Miles", text: "Lorem ipsum dolor sit amet, consectetur adipising elit..." },
+    { name: "Albert Flores", text: "Lorem ipsum dolor sit amet, consectetur adipising elit..." },
+    { name: "Bessie Cooper", text: "Lorem ipsum dolor sit amet, consectetur adipising elit..." }
+];
+
+
+export const usersData = [
+    {
+        name: "Savannah Nguyen",
+        email: "tanya.hill@example.com",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+        socials: ["fa-twitter", "fa-facebook-f", "fa-instagram"]
+    }
+    
+];
+
+
+export const coursess = [
+    { title: "HTML & CSS საფუძვლები", level: "დამწყები" },
+    { title: "JavaScript ინტენსივი", level: "საშუალო" },
+    { title: "React.js ფრეიმვორკი", level: "საშუალო" },
+    { title: "Responsive ვებ დიზაინი", level: "დამწყები" },
+    { title: "Git და GitHub მართვა", level: "ყველა დონე" }
+];
+
+export const books = [
+    { title: "Eloquent JavaScript", author: "Marijn Haverbeke" },
+    { title: "Clean Code", author: "Robert C. Martin" },
+    { title: "You Don't Know JS", author: "Kyle Simpson" },
+    { title: "CSS: The Definitive Guide", author: "Eric A. Meyer" },
+    { title: "JavaScript: The Good Parts", author: "Douglas Crockford" }
+];
+
+export const podcasts = [
+    { title: "Syntax", host: "Wes Bos & Scott Tolinski" },
+    { title: "CodeNewbie", host: "Saron Yitbarek" },
+    { title: "JS Party", host: "Changelog Media" },
+    { title: "Front End Happy Hour", host: "Netflix Engineers" },
+    { title: "The Changelog", host: "Adam & Jerod" }
+];
+
+
+export const booksData = [
+    { title: "All Benefits of PLUS", price: "$24" },
+    { title: "Advanced JavaScript Course", price: "$45" },
+    { title: "UI/UX Design Masterclass", price: "$30" }
 ];

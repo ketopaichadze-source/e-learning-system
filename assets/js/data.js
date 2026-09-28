@@ -272,5 +272,8 @@ export const podcasts = [
 export const booksData = [
     { title: "All Benefits of PLUS", price: "$24" },
     { title: "Advanced JavaScript Course", price: "$45" },
-    { title: "UI/UX Design Masterclass", price: "$30" }
+    { title: "UI/UX Design Masterclass", price: "$30" },
+    { title: "Clean Code", price: "$35" },
+    { title: "Eloquent JavaScript", price: "$40" },
+    { title: "You Don't Know JS", price: "$32" }
 ];

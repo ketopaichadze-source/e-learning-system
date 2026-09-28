@@ -73,9 +73,19 @@ books.forEach(book => {
 
 
 
-const section = document.querySelector(".books");
 
-function createBookItem(title,price){
+const section = document.querySelector(".book-cards")
+
+function createBookCard(title, price) {
+
+    const card = document.createElement("div")
+    card.classList.add("book-card")
+
+    const img = document.createElement("img")
+    img.src = "../assets/images/book.png"
+    img.alt = "book"
+    img.width = 250
+
     const bookList = document.createElement("div")
     bookList.classList.add("book-list")
 
@@ -89,20 +99,14 @@ function createBookItem(title,price){
     bookList.append(bookTitle)
     bookList.append(bookPrice)
 
-    return bookList
+    card.append(img)
+    card.append(bookList)
 
-
+    return card
 }
 
-const myBookList=createBookItem("All Benefits of PLUS","$24")
-
-
-
-// const bookCard = document.querySelector(".book-card")
-// bookCard.append(myBookList)
 
 booksData.forEach(book => {
-    const card = createBookItem(book.title, book.price);
-    section.append(card);
-})
-
+    const card = createBookCard(book.title, book.price)
+    section.append(card)
+});

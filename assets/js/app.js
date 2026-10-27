@@ -117,8 +117,8 @@ else if(window.location.pathname.includes("search")){
     const filterswrapper = document.querySelector(".filters-btn")
     
     
-    let selectedSubject = "all";
-    let selectedLanguage = "all";
+    let selectedSubject = "all"
+    let selectedLanguage = "all"
 
     const allSubjects = searchCourses.map(course => course.subject)
     const allLnguage = searchCourses.map(course=> course.language)
@@ -199,5 +199,8 @@ else if(window.location.pathname.includes("literature")){
 
     
 }
+
+
+
 
 

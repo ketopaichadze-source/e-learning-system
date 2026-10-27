@@ -79,8 +79,6 @@ export function renderCourses(data, wrapper) {
         priceWrapper.append(oldPriceElement, newPriceElement)
         cardFooter.append(teacherElement, priceWrapper)
         cardElement.append(titleElement, descElement, infoElements, cardFooter)
-
-
         wrapper.append(cardElement)
     });
 }
@@ -92,7 +90,6 @@ export function renderLearningSection(wrapper) {
 
 
     const titleElement = create("h3", "Know about learning platform")
-
     const elementUl = document.createElement("ul")
     elementUl.classList.add("features-list")
 
@@ -101,13 +98,8 @@ export function renderLearningSection(wrapper) {
 
     features.forEach(text => {
         const elementLi = document.createElement("li")
-
-
         const blueDot = create("span", "", "dot")
-
-
         const textSpan = create("span", text)
-
 
         elementLi.append(blueDot, textSpan)
         elementUl.append(elementLi)
